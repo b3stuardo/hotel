@@ -30,8 +30,7 @@ jobs:
 
       # We need to install composer.phar first in the system
       - name: Install composer
-        #run: curl --show-error --silent https://getcomposer.org/installer | php
-        run: curl --show-error -sS https://getcomposer.org/installer | php
+        run: curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin
 
       # Run composer to install all dependencies
       - name: Install composer dependencies
