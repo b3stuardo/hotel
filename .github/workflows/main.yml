@@ -32,9 +32,9 @@ jobs:
       - name: Install composer
         run: curl -sS https://getcomposer.org/installer | php -- --filename=composer
 
-      # Run composer to install all dependencies composer.phar -> composer
-      - name: Install composer dependencies
-        run: php composer install
+    # Run composer to install all dependencies composer.phar -> composer
+    #  - name: Install composer dependencies
+    #    run: php composer install
 
       # Now run the PHPUnit tests
       - name: Run PHPUnit tests
